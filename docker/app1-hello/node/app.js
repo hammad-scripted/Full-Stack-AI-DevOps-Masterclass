@@ -9,6 +9,7 @@ app.get('/', (req, res) => {
     message: 'Hello from Simple App (Node)',
     env: ENV,
     container: HOSTNAME,
+    
   });
 });
 

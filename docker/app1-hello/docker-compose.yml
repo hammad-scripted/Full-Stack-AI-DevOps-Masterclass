@@ -1,0 +1,6 @@
+services:
+  hello-python:
+    build: ./python
+    ports: ['3001:3000']
+    environment:
+      - ENV_VALUE=Hello from Simple App (Python Flask)

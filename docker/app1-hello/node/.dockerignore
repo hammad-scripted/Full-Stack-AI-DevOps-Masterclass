@@ -3,3 +3,4 @@ logs
 *.txt
 Dockerfile
 .gitignore
+.env
