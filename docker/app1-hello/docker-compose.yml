@@ -3,4 +3,11 @@ services:
     build: ./python
     ports: ['3001:3000']
     environment:
-      - ENV_VALUE=Hello from Simple App (Python Flask)
+      - ENV_VALUE=${ENV_VALUE}
+
+  hello-node:
+    build: ./node
+    ports: ['3002:3000']
+    environment:
+      - ENV_VALUE=${ENV_VALUE}
+    
