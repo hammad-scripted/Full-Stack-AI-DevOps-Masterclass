@@ -1,12 +1,14 @@
 services:
   hello-python:
     build: ./python
+    image: hammad740/hello-python:1.0
     ports: ['3001:3000']
     environment:
       - ENV_VALUE=${ENV_VALUE}
 
   hello-node:
     build: ./node
+    image: hammad740/hello-node:1.0
     ports: ['3002:3000']
     environment:
       - ENV_VALUE=${ENV_VALUE}
